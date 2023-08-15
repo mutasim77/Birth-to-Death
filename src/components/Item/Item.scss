@@ -1,0 +1,42 @@
+.checklist-item{
+    .list-phase{
+        margin: 50px 0 20px 0;
+        text-align: center;
+        color: rgb(21, 165, 209);
+        letter-spacing: 1px;
+    }
+    
+    .milestone-list{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 35px;
+    }
+    
+    .list-item{
+        width: 300px;
+        height: 105px;
+        border: 1px solid #fff;
+        border-radius: 7px;
+        padding: 20px;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        font-size: 1.3em;
+        transition: all .2s ease;        
+
+        &.achived{
+            background-color: #2ecc71;
+            color: #000;
+        }
+    }
+
+
+    [type="checkbox"]{
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        filter: hue-rotate(290deg)
+    }
+}

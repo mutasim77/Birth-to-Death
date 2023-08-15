@@ -1,0 +1,54 @@
+@mixin headingh2($marginTop: false){
+    font-weight: 500;
+    text-align: center;
+    letter-spacing: 1px;
+
+    @if $marginTop {
+        margin-top: 20px;
+    }
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+
+    .content{
+        margin-top: 30px;
+
+        &-header{
+            font-weight: 500;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+        &-desc{
+            max-width: 900px;
+            text-align: center;
+            margin: 0 auto;
+            line-height: 1.7;
+            margin-top: 30px;
+            letter-spacing: 1px;
+        }
+    }
+    
+    hr{
+        margin: 15px 0;
+    }
+
+    .checklist-section{
+        h2{
+            @include headingh2($marginTop: true);
+        }
+    }
+
+    .completed-items-section{
+        border: 1px solid #fff;
+        padding: 20px 0;
+        border-radius: 5px;
+        margin-top: 50px;
+        h2{
+            @include headingh2();
+        }
+    }
+
+}
